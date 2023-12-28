@@ -5,6 +5,8 @@ import Welcome from "./Pages/Welcome";
 import DashBoard from "./Pages/DashBoard";
 import Running from "./clinets/projects/Running";
 import Profile from "./freelancer/Profile";
+import NFT from "./freelancer/NFT";
+import MarketPlace from "./clinets/pages/MarketPlace";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
 <Route path="/projects/running" element={<Running />}/>
 <Route path="/projects/form" element={< Form/>}/>
 <Route path="/profile" element={< Profile/>}/>
+<Route path="/nft" element={< NFT/>}/>
+<Route path="/marketplace" element={< MarketPlace/>}/>
 </Routes>
   );
 }
