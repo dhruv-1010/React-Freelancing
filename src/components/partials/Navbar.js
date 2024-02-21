@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 export default function NavBar() {
   return (
     <>
@@ -53,35 +53,35 @@ export default function NavBar() {
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <Link
+                <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `block py-2 px-3 text-white ${isActive ? "bg-blue-700" : "bg-white"} rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500`
+                    `block py-2 px-3  ${isActive ? "text-blue-700" : "text-white"} rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500`
                   }
                   aria-current="page"
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    `block py-2 px-3 text-white ${isActive ? "bg-blue-700" : "bg-white"} rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500`
+                    `block py-2 px-3 ${isActive ? "text-blue-700" : "text-white"} rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500`
                   }
                 >
                   About
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    `block py-2 px-3 text-white ${isActive ? "bg-blue-700" : "bg-white"} rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500`
+                    `block py-2 px-3 ${isActive ? "text-blue-700" : "text-white"} rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500`
                   }
                 >
                   Contact
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
